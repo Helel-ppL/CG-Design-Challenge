@@ -1,0 +1,138 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+
+:root {
+  --text: rgba(255, 255, 255, 1);
+  --secondary-text: rgba(211, 211, 211,1);
+  --green: rgba(57, 226, 157, 1);
+  --green-hover: rgba(30, 200, 132, 1);
+  --blue: rgba(87, 98, 213, 1);
+  --gray: rgba(48, 49, 65, 1);
+  --dark-gray: rgba(50, 54, 72, 1);
+  --light-gray: rgba(55, 62, 84, 1);
+  --border: rgba(76, 96, 133, 1);
+  --input: rgba(76, 96, 133, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  border: none;
+}
+
+html, body {
+  width: 100%;
+}
+
+body {
+  background: url(./assets/icons/backgrounds/background.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: overlay;
+  position: relative;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+  border-radius: 1em;
+}
+
+.button {
+  outline: none;
+  border: none;
+  background-color: var(--green);
+  color: var(--gray);
+  border-radius: 0.5em;
+  padding-inline: 1em;
+  padding-block: 0.9em;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.button img{
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-color: var(--green-hover);
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: var(--input);
+  border-radius: 0.5em;
+  height: 3.5em;
+}
+
+.input input, .input select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  height: 100%;
+  color: var(--text);
+  flex: 1;
+  appearance: none;
+  border: 0 0.5em 0.5em 0;
+  font-size: 0.9em;
+}
+
+.input input::placeholder {
+  color: var(--text);
+}
+
+.input i, .inputImg {
+  color: var(--text);
+  padding: 1em 1em;
+}
+
+.input div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-flow: column wrap;
+}
+
+.input label {
+  color: var(--secondary-text);
+  font-size: 0.7em;
+}
+
+.input.select i {
+  color: var(--green);
+}
+
+.input.select i:last-child {
+  color: var(--text);
+}
+
+.input.select {
+  width: 10em;
+}
+
+.input option {
+  width: 100%;
+  background-color: var(--border);
+  color: var(--text);
+}

@@ -1,0 +1,45 @@
+<p>home works!</p>
+<main>
+  <h2>Condimentum consectetur</h2>
+
+  <section class="filters">
+      <section>
+          <div class="input">
+              <i class="fa-solid fa-gamepad"></i>
+              <select name="game" id="game">
+                  <option value="" disabled selected>Select a game</option>
+              </select>
+              <i class="fa-solid fa-caret-down"></i>
+          </div>
+      </section>
+      <section>
+          <div class="input">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="search" placeholder="Search" name="search" id="search">
+          </div>
+          <div>
+              <div class="input select">
+                  <img class="inputImg" src="../../assets/icons/icons/item-bag.svg">
+                  <div>
+                      <label for="price">Price</label>
+                      <select name="price" id="price">
+                          <option value="All" selected>All</option>
+                      </select>
+                  </div>
+                  <i class="fa-solid fa-caret-down"></i>
+              </div>
+              <div class="input select">
+                  <img class="inputImg" src="../../assets/icons/icons/feather.svg">
+                  <div>
+                      <label for="type">Item type</label>
+                      <select name="price" id="price">
+                          <option value="All" selected>All</option>
+                      </select>
+                  </div>
+                  <i class="fa-solid fa-caret-down"></i>
+              </div>
+          </div>
+      </section>
+  </section>
+  <app-item-list/>
+</main>

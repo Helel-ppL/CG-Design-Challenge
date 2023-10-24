@@ -1,0 +1,190 @@
+:host {
+    flex: 1;
+    min-width: 12em;
+    min-height: 21em;
+    background-color: var(--dark-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-flow: column wrap;
+    border-radius: 0.5em;
+    padding: 1.5em;
+    gap: 1em;
+}
+
+#first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+#first > div {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: column wrap;
+    gap: 0.4em;
+    height: 100%;
+}
+
+#first > div > p {
+    color: var(--text);
+    font-size: 0.7em;
+}
+
+#first > div p i {
+    color: var(--green);
+    font-size: 1rem;
+}
+
+#first i {
+  font-size: 0.4rem !important;
+}
+
+#second {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-flow: column wrap;
+    gap: 1em;
+}
+
+#second img {
+    width: 3em;
+}
+
+#second > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-flow: column wrap;
+    gap: 0.5em;
+    color: var(--text);
+}
+
+#second > div > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+#second > div > div:first-child p {
+   font-size: 1em;
+}
+
+#second > div > div:first-child img {
+    width: 1.5em;
+}
+
+#second > div > div:nth-child(2) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    gap: 1em;
+}
+
+#second > div > div:nth-child(2) p {
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+#second > div > p {
+    font-size: 0.7em;
+    color: var(--secondary-text);
+}
+
+#third {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.button {
+    background-color: var(--blue);
+    color: var(--text);
+    letter-spacing: normal;
+    width: 6.6em;
+    padding-block: 0;
+    height: 3.5em;
+}
+
+.button:hover {
+    background-color: hsl(235, 60%, 50%);
+}
+
+.button.details {
+    background-color: var(--gray);
+    color: var(--secondary-text);
+}
+
+.button.details:hover {
+    background-color: hsla(219, 27%, 30%, 0.149);
+}
+
+.button i {
+    background-color: hsl(235, 60%, 50%);
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+.stock {
+    color: var(--green) !important;
+    border: 1px solid var(--green);
+    border-radius: 0.5em;
+    padding: 0.3em;
+    text-align: center;
+}
+
+.stepper {
+    background-color: var(--light-gray);
+    width: 5em;
+    height: 3em;
+    color: var(--text);
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+.discount {
+    font-weight: 400 !important;
+    text-decoration: line-through;
+    text-decoration-color: red;
+    color: var(--secondary-text);
+}
+
+@media screen and (orientation: portrait) {
+    #third {
+        gap: 0.5em;
+    }
+
+    .button {
+        flex: 1;
+        gap: 1em;
+    }
+
+    .button i {
+        padding: 0.5em 1em;
+    }
+}
+
+@media screen and (max-width: 1279px), (min-width: 1280px) and (max-width: 1440px) {
+    :host {
+        min-width: 15em;
+    }
+
+    #third {
+        gap: 0.5em;
+    }
+
+    .button {
+        flex: 1;
+        gap: 0.5em;
+    }
+
+    .button i {
+        padding: 0.5em 1em;
+    }
+}
